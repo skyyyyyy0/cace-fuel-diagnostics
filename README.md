@@ -78,7 +78,7 @@ CACE V1 improved all three final-test metrics, although the improvement was mode
 
 LOVO performance was mixed: the observation-weighted MAE increased slightly from 0.1844 to 0.1857 L/window. This indicates that generalization to unseen vehicles still requires improvement.
 
-Actual versus expected fuel comparison
+![Actual versus expected fuel comparison](reports/interpretation/figures/actual_vs_expected_comparison.png)
 
 ### Model Interpretation
 
@@ -92,7 +92,7 @@ Average Vehicle Speed was the most influential feature within the ML residual co
 
 This ranking explains the ML correction only. It does not mean that vehicle speed is the largest causal driver of total fuel consumption.
 
-Global SHAP feature importance
+![Global SHAP feature importance](reports/interpretation/figures/shap_global_importance.png)
 
 ### Vehicle Review Priority
 
@@ -114,12 +114,12 @@ This makes Low RPM the first condition for additional investigation, but it does
 
 ```text
 cace/                    Core analysis and modeling package
+geotab_pipeline/         Authorized telemetry extraction and storage utilities
 config/                  Portable pipeline configuration
 docs/                    Project and methodology documentation
-pipelines/               Reusable pipeline workflows
 reports/interpretation/  Public tables and figures
-tests/                   Validation and regression tests
-run_pipeline.py          Main pipeline entry point
+requirements.txt         Python dependencies
+run_pipeline.py          Operational ingestion and audit entry point
 ```
 
 ## Documentation
@@ -129,6 +129,16 @@ run_pipeline.py          Main pipeline entry point
 - [Window and Target Design](docs/cace_v1_window_design.md)
 - [Data Dictionary](docs/data_dictionary.md)
 - [Business & Interpretation Report](docs/cace_v1_business_interpretation_report.md)
+
+## Environment Setup
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+```
+
+The repository supports review of the pipeline code, methodology, and anonymized outputs. Full operational execution requires authorized Geotab credentials, private configuration files, source telemetry, and model artifacts that are not included in this repository.
 
 ## Data Access and Reproducibility
 
