@@ -3,6 +3,8 @@
 # separately so failures are easy to identify and the workflow can be reused
 # manually now and scheduled later without changing the underlying scripts.
 
+import argparse
+import csv
 import logging
 import subprocess
 import sys
@@ -135,6 +137,29 @@ PIPELINE_STEPS = [
     },
 ]
 
+def parse_args():
+    parser = argparse.ArgumentParser(
+        description=(
+            "Run the authorized CACE ingestion and data-audit workflow."
+        )
+    )
+
+    action = parser.add_mutually_exclusive_group(required=True)
+
+    action.add_argument(
+        "--validate-only",
+        action="store_true",
+        help="Validate pipeline script paths without executing the workflow.",
+    )
+
+    action.add_argument(
+        "--execute",
+        action="store_true",
+        help="Execute GeoTab extraction, S3 upload, and data-audit steps.",
+    )
+
+    return parser.parse_args()
+
 
 def append_pipeline_run_log(
     run_id,
@@ -163,8 +188,6 @@ def append_pipeline_run_log(
         "status": status,
         "failed_step": failed_step or "",
     }
-
-    import csv
 
     with PROCESSING_LOG_FILE.open(
         "a",
@@ -277,7 +300,12 @@ def run_step(step):
 
 
 def main():
+    args = parse_args()
     validate_pipeline_steps()
+
+    if args.validate_only:
+        logger.info("Pipeline validation passed. No steps were executed.")
+        return
 
     started_at = datetime.now(
         timezone.utc
