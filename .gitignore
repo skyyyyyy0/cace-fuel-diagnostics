@@ -1,0 +1,60 @@
+# Environment
+.venv/
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+build/
+dist/
+*.egg-info/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# macOS and editor files
+.DS_Store
+__MACOSX/
+._*
+.vscode/
+.idea/
+
+# Private configuration
+config/vehicles.yaml
+config/aws.yaml
+
+# Private data
+data/raw/
+data/interim/
+data/processed/
+artifacts/
+
+# Private metadata
+metadata/vehicle_mapping/
+metadata/checkpoints/
+metadata/signal_inventory/
+metadata/processing_logs/
+metadata/datasets/*_private.yaml
+
+# Private and internal reports
+reports/data_audit/
+reports/**/*_private.csv
+reports/**/*_private.json
+
+# Internal document containing original vehicle identifiers
+docs/initial_signal_inventory_frequency_report.md
+
+# Logs
+*.log
+
+# Private model artifacts
+models/**/*_private.joblib
+
+# Credential files
+*.pem
+*.key

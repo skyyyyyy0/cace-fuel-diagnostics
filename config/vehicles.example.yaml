@@ -1,0 +1,9 @@
+# Example vehicle configuration for the CACE pipeline.
+# Replace the placeholder IDs with vehicle identifiers available in your environment.
+# The actual vehicle configuration is excluded from version control.
+
+vehicles:
+  - "VEHICLE_01"
+  - "VEHICLE_02"
+  - "VEHICLE_03"
+  - "VEHICLE_04"

@@ -1,0 +1,79 @@
+version: "1.0"
+
+rules:
+
+  rpm:
+    type: range
+    min: 0
+    max: 3000
+    action: flag
+    note: "Conservative operating range based on the observed RPM distribution."
+
+  engine_load:
+    type: range
+    min: 0
+    max: 100
+    action: flag
+    note: "Percent load is expected to remain between 0 and 100."
+
+  engine_torque:
+    type: range
+    min: -125
+    max: 125
+    action: flag
+    note: "A wider range is retained because percent torque can include negative values depending on the diagnostic definition."
+
+  vehicle_speed:
+    type: range
+    min: 0
+    max: 160
+    action: flag
+    note: "Conservative upper limit for the current commercial fleet."
+
+  coolant_temperature:
+    type: range
+    min: -40
+    max: 130
+    action: flag
+    note: "Values outside this range are treated as sensor or data-quality review candidates."
+
+  outside_temperature:
+    type: range
+    min: -40
+    max: 70
+    action: flag
+    note: "Wide range retained because sensor location can be affected by vehicle heat."
+
+  active_regen_status:
+    type: allowed_values
+    values:
+      - 0
+      - 1
+    action: flag
+    note: "Expected binary regeneration status."
+
+  total_fuel_used:
+    type: cumulative
+    allow_decrease: false
+    action: flag
+    note: "Negative changes may indicate a counter reset, rollover, or data issue."
+
+  fuel_rate:
+    enabled: false
+    note: "Range rule pending confirmation of the GeoTab unit and diagnostic definition."
+
+  soot_load:
+    enabled: false
+    note: "Range rule pending confirmation of the diagnostic definition because observed values exceed 100."
+
+  differential_pressure:
+    enabled: false
+    note: "No usable observations are currently available."
+
+  total_regenerations:
+    enabled: false
+    note: "No usable observations are currently available."
+
+  total_regeneration_time:
+    enabled: false
+    note: "No usable observations are currently available."

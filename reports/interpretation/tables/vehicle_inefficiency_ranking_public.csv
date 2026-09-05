@@ -1,0 +1,4 @@
+review_priority_rank,vehicle,review_status,cace_deviation_percent,positive_cace_deviation_window_rate_percent,cace_window_deviation_l,lovo_observations,aggregate_actual_window_fuel_l,aggregate_physics_expected_window_fuel_l,aggregate_cace_expected_window_fuel_l,physics_window_deviation_l,physics_deviation_percent
+1,VEHICLE_04,Actual fuel above CACE expected,8.72344646,57.50000000,3.60817653,80,44.97000000,41.18134980,41.36182347,3.78865020,9.19991748
+2,VEHICLE_03,Actual fuel above CACE expected,5.48068019,51.64835165,2.48104657,91,47.75000000,46.13776748,45.26895343,1.61223252,3.49438780
+,VEHICLE_02,Actual fuel below CACE expected,-12.02454815,33.85826772,-19.73942966,254,144.42000000,158.43916019,164.15942966,-14.01916019,-8.84829241

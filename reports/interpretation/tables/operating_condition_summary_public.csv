@@ -1,0 +1,31 @@
+scope,feature,feature_label,unit,condition_band,observations,feature_min,feature_max,feature_mean,mean_cace_residual_l_per_window,median_cace_residual_l_per_window,positive_deviation_rate_percent
+LOVO out-of-sample,avg_rpm,Average RPM,rpm,Low,142,224.56250000,1173.63235294,1039.41890212,0.01855141,0.00162292,50.70422535
+LOVO out-of-sample,avg_rpm,Average RPM,rpm,Medium,141,1178.12500000,1309.35000000,1246.45038199,-0.03065446,-0.02873632,41.13475177
+LOVO out-of-sample,avg_rpm,Average RPM,rpm,High,142,1310.20000000,1712.08333333,1432.72061885,-0.08424105,-0.09707430,34.50704225
+LOVO out-of-sample,engine_load,Engine Load,percent,Low,145,0.00000000,11.00000000,3.30344828,-0.01694168,-0.02627801,42.75862069
+LOVO out-of-sample,engine_load,Engine Load,percent,Medium,139,12.00000000,37.00000000,23.02877698,-0.00524371,-0.00075025,49.64028777
+LOVO out-of-sample,engine_load,Engine Load,percent,High,141,38.00000000,100.00000000,75.64539007,-0.07421835,-0.10084139,34.04255319
+LOVO out-of-sample,engine_torque,Engine Torque,percent,Low,144,0.00000000,7.00000000,2.29166667,-0.00912615,-0.02609960,43.05555556
+LOVO out-of-sample,engine_torque,Engine Torque,percent,Medium,140,8.00000000,34.00000000,17.37142857,0.00194516,0.00162292,50.71428571
+LOVO out-of-sample,engine_torque,Engine Torque,percent,High,141,35.00000000,99.00000000,56.90780142,-0.08942102,-0.11222115,32.62411348
+LOVO out-of-sample,avg_vehicle_speed,Average Vehicle Speed,km/h,Low,125,0.00000000,21.22222222,12.73818610,-0.01670479,-0.02627801,43.20000000
+LOVO out-of-sample,avg_vehicle_speed,Average Vehicle Speed,km/h,Medium,125,21.30769231,41.13656388,29.88939465,-0.00913383,-0.00515283,49.60000000
+LOVO out-of-sample,avg_vehicle_speed,Average Vehicle Speed,km/h,High,125,41.33333333,105.31428571,60.04608082,-0.07784458,-0.09168197,35.20000000
+LOVO out-of-sample,avg_coolant_temperature,Average Coolant Temperature,deg C,Low,143,34.33333333,84.00000000,80.41177156,-0.01861467,-0.01839626,44.05594406
+LOVO out-of-sample,avg_coolant_temperature,Average Coolant Temperature,deg C,Medium,155,84.33333333,90.00000000,87.17032258,-0.04068302,-0.05427796,38.70967742
+LOVO out-of-sample,avg_coolant_temperature,Average Coolant Temperature,deg C,High,126,90.33333333,99.00000000,92.73280423,-0.03732126,-0.03570512,43.65079365
+Untouched final test,avg_rpm,Average RPM,rpm,Low,36,795.33333333,1170.00000000,1049.40770980,0.05369944,0.02149172,55.55555556
+Untouched final test,avg_rpm,Average RPM,rpm,Medium,29,1180.15000000,1309.35000000,1260.18356502,-0.02593365,-0.02363002,41.37931034
+Untouched final test,avg_rpm,Average RPM,rpm,High,22,1310.20000000,1712.08333333,1422.98465950,-0.14948262,-0.14315521,13.63636364
+Untouched final test,engine_load,Engine Load,percent,Low,29,0.00000000,11.00000000,3.93103448,0.01578886,-0.01702358,41.37931034
+Untouched final test,engine_load,Engine Load,percent,Medium,30,13.00000000,37.00000000,24.80000000,0.02444308,0.00431905,50.00000000
+Untouched final test,engine_load,Engine Load,percent,High,28,40.00000000,100.00000000,80.92857143,-0.11781012,-0.14849439,28.57142857
+Untouched final test,engine_torque,Engine Torque,percent,Low,31,0.00000000,7.00000000,2.93548387,0.01283230,-0.02270538,38.70967742
+Untouched final test,engine_torque,Engine Torque,percent,Medium,26,9.00000000,33.00000000,19.03846154,0.04595789,0.05058492,57.69230769
+Untouched final test,engine_torque,Engine Torque,percent,High,30,35.00000000,98.00000000,56.93333333,-0.12334068,-0.15260001,26.66666667
+Untouched final test,avg_vehicle_speed,Average Vehicle Speed,km/h,Low,42,0.50000000,21.05000000,12.82541260,-0.00795150,-0.06182231,45.23809524
+Untouched final test,avg_vehicle_speed,Average Vehicle Speed,km/h,Medium,26,21.30769231,40.62500000,29.18657367,-0.02346261,-0.01986448,38.46153846
+Untouched final test,avg_vehicle_speed,Average Vehicle Speed,km/h,High,19,41.33333333,82.11111111,58.51402150,-0.06123805,-0.08556147,31.57894737
+Untouched final test,avg_coolant_temperature,Average Coolant Temperature,deg C,Low,29,77.50000000,84.00000000,82.24712644,-0.02422516,-0.06249315,31.03448276
+Untouched final test,avg_coolant_temperature,Average Coolant Temperature,deg C,Medium,39,84.50000000,90.00000000,87.32692308,-0.06961236,-0.09233790,33.33333333
+Untouched final test,avg_coolant_temperature,Average Coolant Temperature,deg C,High,19,91.00000000,94.00000000,92.31578947,0.06894199,0.11176854,68.42105263

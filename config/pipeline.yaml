@@ -1,0 +1,9 @@
+timezone: "America/New_York"
+
+# Used only when a vehicle has no checkpoint yet.
+initial_start_local: "2026-07-15T00:00:00"
+
+chunk_hours: 6
+overlap_minutes: 10
+safe_delay_minutes: 5
+sleep_seconds: 0.3

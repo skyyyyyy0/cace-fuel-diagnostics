@@ -1,0 +1,3 @@
+model,test_observations,mean_actual_fuel_l_per_window,mean_expected_fuel_l_per_window,mae_l_per_window,rmse_l_per_window,r2,mean_residual_l_per_window,mae_improvement_percent,rmse_improvement_percent
+Physics Baseline,87,0.50885057,0.55377092,0.17273068,0.21331115,0.20093355,-0.04492035,0.00000000,0.00000000
+CACE V1,87,0.50885057,0.53307487,0.16817374,0.21162254,0.21353457,-0.02422430,2.63817606,0.79161729

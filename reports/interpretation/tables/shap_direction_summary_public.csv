@@ -1,0 +1,6 @@
+importance_rank,feature,feature_label,test_observations,feature_min,feature_max,mean_shap_l_per_window,spearman_feature_vs_shap,spearman_p_value,direction
+1,avg_vehicle_speed,Average Vehicle Speed,87,0.50000000,82.11111111,-0.00658140,0.87996646,0.00000000,Higher values tend to increase the ML correction
+2,avg_coolant_temperature,Average Coolant Temperature,87,77.50000000,94.00000000,-0.01515768,-0.23383268,0.02927111,Higher values tend to decrease the ML correction
+3,engine_torque,Engine Torque,87,0.00000000,98.00000000,0.00005814,-0.44954575,0.00001254,Higher values tend to decrease the ML correction
+4,avg_vehicle_speed_missing,Speed Missing Indicator,87,0.00000000,0.00000000,0.00074137,,,Not estimable
+5,avg_coolant_temperature_missing,Coolant Temperature Missing Indicator,87,0.00000000,0.00000000,0.00000000,,,Not estimable

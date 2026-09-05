@@ -1,0 +1,4 @@
+vehicle,lovo_observations,aggregate_actual_window_fuel_l,aggregate_physics_expected_window_fuel_l,aggregate_cace_expected_window_fuel_l,physics_window_deviation_l,cace_window_deviation_l,physics_deviation_percent,cace_deviation_percent,positive_cace_deviation_window_rate_percent
+VEHICLE_02,254,144.42000000,158.43916019,164.15942966,-14.01916019,-19.73942966,-8.84829241,-12.02454815,33.85826772
+VEHICLE_03,91,47.75000000,46.13776748,45.26895343,1.61223252,2.48104657,3.49438780,5.48068019,51.64835165
+VEHICLE_04,80,44.97000000,41.18134980,41.36182347,3.78865020,3.60817653,9.19991748,8.72344646,57.50000000

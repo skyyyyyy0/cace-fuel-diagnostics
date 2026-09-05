@@ -1,0 +1,79 @@
+version: "1.0"
+
+window:
+  anchor_signal: "engine_load"
+  half_window_sec: 60
+  total_window_sec: 120
+
+features:
+
+  avg_rpm:
+    role: "core_feature"
+    source_signals:
+      - "rpm"
+    calculation: "Mean of actual RPM observations within the ±60 second window"
+    unit: "rpm"
+    minimum_observations: 3
+    interpolation: false
+    forward_fill: false
+    availability: "required"
+    feature_version: "V1.0"
+
+  engine_load:
+    role: "core_feature_anchor"
+    source_signals:
+      - "engine_load"
+    calculation: "Actual Engine Load value at the anchor timestamp"
+    unit: "percent"
+    interpolation: false
+    forward_fill: false
+    availability: "required"
+    feature_version: "V1.0"
+
+  rpm_load:
+    role: "core_interaction_feature"
+    source_signals:
+      - "rpm"
+      - "engine_load"
+    calculation: "avg_rpm * engine_load"
+    unit: "rpm_percent"
+    availability: "required"
+    feature_version: "V1.0"
+
+  engine_torque:
+    role: "core_feature"
+    source_signals:
+      - "engine_torque"
+    calculation: "Actual Engine Torque observation matched to the Engine Load anchor"
+    unit: "percent"
+    interpolation: false
+    forward_fill: false
+    availability: "required"
+    feature_version: "V1.0"
+
+targets:
+
+  actual_fuel_used:
+    role: "primary_target"
+    source_signals:
+      - "total_fuel_used"
+    calculation: "fuel_end - fuel_start"
+    unit: "fuel_volume"
+    fuel_boundary_tolerance_sec: 60
+    require_distinct_observations: true
+    require_positive_time_interval: true
+    require_non_negative_delta: true
+    interpolation: false
+    forward_fill: false
+    target_version: "V1.0"
+
+metrics:
+
+  derived_fuel_rate:
+    role: "supporting_metric"
+    source_signals:
+      - "total_fuel_used"
+    calculation: "actual_fuel_used / actual_fuel_interval_sec * 3600"
+    unit: "fuel_volume_per_hour"
+    require_positive_time_interval: true
+    metric_version: "V1.0"

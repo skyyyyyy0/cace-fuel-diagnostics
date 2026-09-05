@@ -1,0 +1,6 @@
+importance_rank,feature,feature_label,mean_absolute_shap_l_per_window,importance_percent
+1,avg_vehicle_speed,Average Vehicle Speed,0.04231905,54.39291321
+2,avg_coolant_temperature,Average Coolant Temperature,0.01937628,24.90443643
+3,engine_torque,Engine Torque,0.01460644,18.77373723
+4,avg_vehicle_speed_missing,Speed Missing Indicator,0.00150074,1.92891313
+5,avg_coolant_temperature_missing,Coolant Temperature Missing Indicator,0.00000000,0.00000000

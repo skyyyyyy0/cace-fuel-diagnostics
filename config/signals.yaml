@@ -1,0 +1,88 @@
+core:
+  rpm:
+    display_name: "Engine Speed (RPM)"
+    aliases:
+      - "Engine speed"
+
+  engine_load:
+    display_name: "Engine Load"
+    aliases:
+      - "Engine load"
+      - "Engine percent load at current speed"
+
+  engine_torque:
+    display_name: "Engine Torque"
+    aliases:
+      - "Actual engine - percent torque"
+      - "Actual engine percent torque"
+
+  total_fuel_used:
+    display_name: "Total Fuel Used"
+    aliases:
+      - "Total fuel used (since telematics device install)"
+      - "Total fuel used"
+
+  fuel_rate:
+    display_name: "Fuel Rate"
+    aliases:
+      - "Instantaneous fuel rate"
+      - "Engine fuel rate"
+
+
+additional:
+  vehicle_speed:
+    display_name: "Vehicle Speed"
+    aliases:
+      - "Engine road speed"
+
+  coolant_temperature:
+    display_name: "Engine Coolant Temperature"
+    aliases:
+      - "Engine coolant temperature"
+
+  outside_temperature:
+    display_name: "Outside Air Temperature"
+    aliases:
+      - "Outside air temperature"
+      - "Raw outside air temperature"
+
+
+dpf:
+  soot_load:
+    display_name: "DPF Soot Load"
+    aliases:
+      - "Diesel particulate filter 1 soot load percent"
+      - "Aftertreatment 1 diesel particulate filter soot load percent"
+
+  differential_pressure:
+    display_name: "DPF Differential Pressure"
+    aliases:
+      - "Diesel particulate filter 1 differential pressure"
+      - "Aftertreatment 1 diesel particulate filter differential pressure"
+
+  active_regen_status:
+    display_name: "DPF Active Regeneration Status"
+    aliases:
+      - "Diesel particulate filter active regeneration status"
+
+  total_regenerations:
+    display_name: "Total Regenerations"
+    aliases:
+      - "Aftertreatment 1 total number of active regenerations"
+      - "Total number of active regenerations"
+
+  total_regeneration_time:
+    display_name: "Total Regeneration Time"
+    aliases:
+      - "Aftertreatment 1 total regeneration time"
+      - "Total regeneration time"
+
+  regen_inhibit_status:
+    display_name: "Regen Inhibit Status"
+    aliases:
+      - "Generic AFT regen inhibit status"
+
+  regen_force_switch:
+    display_name: "Regen Force Switch"
+    aliases:
+      - "Generic DPF filter regen force switch"
